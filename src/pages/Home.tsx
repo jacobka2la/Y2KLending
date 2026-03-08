@@ -17,8 +17,11 @@ const Home = () => {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-light via-background to-background" />
+      <section className="relative overflow-hidden min-h-[85vh] flex items-center">
+        <div className="absolute inset-0">
+          <img src={cityBg} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background" />
+        </div>
         <div className="relative section-container text-center py-28 md:py-40 lg:py-48">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
