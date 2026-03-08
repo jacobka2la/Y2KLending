@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
+import cityBg from "@/assets/city-bg.jpg";
 
 const steps = [
   {

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { MessageSquare, ClipboardCheck, FileText, Brain, CheckCircle, Handshake } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
+import cityBg from "@/assets/city-bg.jpg";
 
 const strengths = [
   {
