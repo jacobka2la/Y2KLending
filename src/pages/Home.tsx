@@ -28,7 +28,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="badge-accent mb-6 inline-block">Private Real Estate Lending</span>
+            <span className="badge-accent mb-6 inline-block">Hard Money Lending</span>
             <h1 className="heading-display max-w-4xl mx-auto mb-6">
               Strategic Private Lending for Real Estate Investors
             </h1>
