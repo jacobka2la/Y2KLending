@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Building, ArrowRightLeft, Clock, Banknote, Layers } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
-import cityBg from "@/assets/city-bg.jpg";
+import bgOffer from "@/assets/bg-offer.jpg";
 
 const offerings = [
   {
