@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Shield, Zap, Eye, Anchor } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
+import cityBg from "@/assets/city-bg.jpg";
+import patternBg from "@/assets/pattern-bg.jpg";
 
 const coreValues = [
   { icon: Shield, title: "Integrity", description: "Every transaction is conducted with complete transparency and ethical standards that protect all parties involved." },
