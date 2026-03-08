@@ -19,8 +19,8 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
       <div className="section-container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-1.5" onClick={() => setMobileOpen(false)}>
-          <span className="inline-flex items-center justify-center px-2.5 py-0.5 rounded-md bg-primary text-primary-foreground text-xl md:text-2xl font-bold font-heading tracking-tight leading-none">Y2K</span>
+        <Link to="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
+          <span className="inline-flex items-center justify-center w-[52px] h-[30px] md:w-[60px] md:h-[34px] rounded-md bg-primary text-primary-foreground text-lg md:text-xl font-bold font-heading tracking-tight leading-none">Y2K</span>
           <span className="text-base md:text-lg font-semibold font-body text-foreground tracking-wide uppercase">Lending</span>
         </Link>
 
