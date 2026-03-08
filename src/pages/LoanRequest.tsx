@@ -1,6 +1,7 @@
 import { useState, FormEvent } from "react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
+import bgLoan from "@/assets/bg-loan.jpg";
 import { toast } from "sonner";
 
 const LoanRequest = () => {
