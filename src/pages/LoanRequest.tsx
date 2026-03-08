@@ -15,7 +15,7 @@ const LoanRequest = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formspree.io/f/mrbkzkyy", {
+      const response = await fetch("https://formspree.io/f/xlgpgeld", {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
