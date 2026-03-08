@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-              <span className="inline-flex items-center justify-center w-[52px] h-[30px] rounded-md text-lg font-bold font-body tracking-tight leading-none uppercase" style={{ background: "hsl(0 55% 65%)", color: "#fff" }}>Y2K</span>
+              <span className="inline-flex items-center justify-center w-[52px] h-[30px] rounded-md bg-background text-foreground text-lg font-bold font-body tracking-tight leading-none uppercase">Y2K</span>
               <span className="text-base font-semibold font-body opacity-80 uppercase tracking-wide">Lending</span>
             </div>
             <p className="text-sm opacity-60 leading-relaxed max-w-xs mx-auto md:mx-0">
