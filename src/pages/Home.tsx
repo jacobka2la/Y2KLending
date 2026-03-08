@@ -106,7 +106,10 @@ const Home = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-background">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={patternBg} alt="" className="w-full h-full object-cover opacity-40" />
+        </div>
         <div className="section-container text-center max-w-3xl">
           <AnimatedSection>
             <h2 className="heading-section mb-6">Ready to Get Started?</h2>

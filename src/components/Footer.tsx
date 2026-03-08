@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 text-center md:text-left">
           {/* Brand */}
           <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-              <span className="text-2xl font-bold font-heading" style={{ color: "hsl(0 55% 65%)" }}>Y2K</span>
-              <span className="text-lg font-medium font-body opacity-80">Lending</span>
+            <div className="flex items-center justify-center md:justify-start gap-1.5 mb-4">
+              <span className="inline-flex items-center justify-center px-2.5 py-0.5 rounded-md text-xl font-bold font-heading tracking-tight leading-none" style={{ background: "hsl(0 55% 65%)", color: "#fff" }}>Y2K</span>
+              <span className="text-base font-semibold font-body opacity-80 uppercase tracking-wide">Lending</span>
             </div>
             <p className="text-sm opacity-60 leading-relaxed max-w-xs mx-auto md:mx-0">
               Strategic private lending solutions for real estate investors. Dependable capital, transparent terms, and efficient execution.
