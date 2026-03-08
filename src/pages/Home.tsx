@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Shield, Zap, Eye, Anchor } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
+import cityBg from "@/assets/city-bg.jpg";
+import patternBg from "@/assets/pattern-bg.jpg";
 
 const coreValues = [
   { icon: Shield, title: "Integrity", description: "Every transaction is conducted with complete transparency and ethical standards that protect all parties involved." },
@@ -15,8 +17,11 @@ const Home = () => {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-light via-background to-background" />
+      <section className="relative overflow-hidden min-h-[85vh] flex items-center">
+        <div className="absolute inset-0">
+          <img src={cityBg} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background" />
+        </div>
         <div className="relative section-container text-center py-28 md:py-40 lg:py-48">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -101,8 +106,11 @@ const Home = () => {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-background">
-        <div className="section-container text-center max-w-3xl">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={patternBg} alt="" className="w-full h-full object-cover opacity-40" />
+        </div>
+        <div className="relative section-container text-center max-w-3xl">
           <AnimatedSection>
             <h2 className="heading-section mb-6">Ready to Get Started?</h2>
             <p className="text-body-lg mb-8">

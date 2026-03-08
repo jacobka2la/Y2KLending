@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Building, ArrowRightLeft, Clock, Banknote, Layers } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
+import cityBg from "@/assets/city-bg.jpg";
 
 const offerings = [
   {
@@ -35,8 +36,12 @@ const WhatWeOffer = () => {
   return (
     <PageLayout>
       {/* Header */}
-      <section className="section-padding bg-gradient-to-b from-primary-light to-background">
-        <div className="section-container text-center max-w-3xl">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={cityBg} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/85 to-background" />
+        </div>
+        <div className="relative section-container text-center max-w-3xl">
           <AnimatedSection>
             <span className="badge-accent mb-4 inline-block">Our Services</span>
             <h1 className="heading-display mb-6">What We Offer</h1>
