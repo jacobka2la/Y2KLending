@@ -49,43 +49,51 @@ const Navbar = () => {
             <span className="inline-flex items-center justify-center w-[52px] h-[30px] md:w-[60px] md:h-[34px] rounded-md bg-foreground text-background text-lg md:text-xl font-bold font-body tracking-tight leading-none uppercase">Y2K</span>
             <span className="text-base md:text-lg font-semibold font-body text-foreground tracking-wide uppercase">Lending</span>
           </Link>
+
+          {/* Mobile Toggle */}
+          <button
+            className="lg:hidden absolute right-4 p-2 text-foreground"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle navigation"
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* Mobile Nav */}
+        <AnimatePresence>
+          {mobileOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.25 }}
+              className="lg:hidden bg-card border-b border-border overflow-hidden"
+            >
+              <div className="section-container py-4 flex flex-col gap-1">
+                {navItems.map((item) => {
+                  const isActive = location.pathname === item.path;
+                  return (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      onClick={() => setMobileOpen(false)}
+                      className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${
+                        isActive
+                          ? "text-primary bg-primary-light"
+                          : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </>
-
-      {/* Mobile Nav */}
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25 }}
-            className="lg:hidden bg-card border-b border-border overflow-hidden"
-          >
-            <div className="section-container py-4 flex flex-col gap-1">
-              {navItems.map((item) => {
-                const isActive = location.pathname === item.path;
-                return (
-                  <Link
-                    key={item.path}
-                    to={item.path}
-                    onClick={() => setMobileOpen(false)}
-                    className={`px-4 py-3 text-base font-medium rounded-lg transition-colors ${
-                      isActive
-                        ? "text-primary bg-primary-light"
-                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                );
-              })}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
   );
 };
 
