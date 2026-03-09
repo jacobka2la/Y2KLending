@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Shield, Zap, Eye, Anchor } from "lucide-react";
+import { Shield, Zap, Eye, Anchor, Clock, Building, Briefcase, Coins } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 import cityBg from "@/assets/city-bg.jpg";
