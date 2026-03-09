@@ -38,7 +38,7 @@ const Home = () => {
           >
             <span className="badge-accent mb-6 inline-block">Hard Money Lending</span>
             <h1 className="heading-display max-w-5xl mx-auto mb-6">
-              Strategic Private Lending<br className="hidden md:block" /> for Real Estate Investors
+              Strategic Hard Money Lending<br className="hidden md:block" /> for Real Estate Investors
             </h1>
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
               Y2K Lending provides dependable financing solutions designed for investors who need reliable capital to act on real estate opportunities with confidence and speed.
