@@ -13,11 +13,12 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
-      <div className="section-container flex items-center h-16 md:h-20">
+      {/* Desktop Layout */}
+      <div className="hidden md:flex section-container items-center h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 mr-8">
-          <span className="inline-flex items-center justify-center w-[52px] h-[30px] md:w-[60px] md:h-[34px] rounded-md bg-foreground text-background text-lg md:text-xl font-bold font-body tracking-tight leading-none uppercase">Y2K</span>
-          <span className="text-base md:text-lg font-semibold font-body text-foreground tracking-wide uppercase">Lending</span>
+          <span className="inline-flex items-center justify-center w-[60px] h-[34px] rounded-md bg-foreground text-background text-xl font-bold font-body tracking-tight leading-none uppercase">Y2K</span>
+          <span className="text-lg font-semibold font-body text-foreground tracking-wide uppercase">Lending</span>
         </Link>
 
         {/* Navigation Links */}
@@ -38,6 +39,39 @@ const Navbar = () => {
               </Link>
             );
           })}
+        </div>
+      </div>
+
+      {/* Mobile Layout */}
+      <div className="md:hidden">
+        {/* Logo Row */}
+        <div className="flex items-center justify-center h-16 px-4">
+          <Link to="/" className="flex items-center gap-2">
+            <span className="inline-flex items-center justify-center w-[52px] h-[30px] rounded-md bg-foreground text-background text-lg font-bold font-body tracking-tight leading-none uppercase">Y2K</span>
+            <span className="text-base font-semibold font-body text-foreground tracking-wide uppercase">Lending</span>
+          </Link>
+        </div>
+
+        {/* Scrollable Navigation Row */}
+        <div className="overflow-x-auto border-t border-border scrollbar-hide">
+          <div className="flex items-center gap-1 px-4 py-2 w-max">
+            {navItems.map((item) => {
+              const isActive = location.pathname === item.path;
+              return (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`whitespace-nowrap px-3 py-1.5 text-sm font-medium rounded-lg transition-colors duration-200 ${
+                    isActive
+                      ? "text-primary bg-primary-light"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </nav>
