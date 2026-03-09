@@ -13,6 +13,13 @@ const coreValues = [
   { icon: Anchor, title: "Reliability", description: "When we commit to a deal, we execute. Our borrowers trust us to follow through on every agreement without exception." },
 ];
 
+const credibilityItems = [
+  { icon: Clock, title: "Fast Closings" },
+  { icon: Building, title: "Asset-Based Lending" },
+  { icon: Briefcase, title: "Investor-Focused Financing" },
+  { icon: Coins, title: "Reliable Capital" },
+];
+
 const Home = () => {
   return (
     <PageLayout>
