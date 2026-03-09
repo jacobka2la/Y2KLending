@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Shield, Zap, Eye, Anchor } from "lucide-react";
+import { Shield, Zap, Eye, Anchor, Clock, Building, Briefcase, Coins } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 import cityBg from "@/assets/city-bg.jpg";
@@ -13,6 +13,13 @@ const coreValues = [
   { icon: Anchor, title: "Reliability", description: "When we commit to a deal, we execute. Our borrowers trust us to follow through on every agreement without exception." },
 ];
 
+const credibilityItems = [
+  { icon: Clock, title: "Fast Closings" },
+  { icon: Building, title: "Asset-Based Lending" },
+  { icon: Briefcase, title: "Investor-Focused Financing" },
+  { icon: Coins, title: "Reliable Capital" },
+];
+
 const Home = () => {
   return (
     <PageLayout>
@@ -20,6 +27,7 @@ const Home = () => {
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
         <div className="absolute inset-0">
           <img src={cityBg} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/60 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background" />
         </div>
         <div className="relative section-container text-center py-28 md:py-40 lg:py-48">
@@ -29,13 +37,13 @@ const Home = () => {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
             <span className="badge-accent mb-6 inline-block">Hard Money Lending</span>
-            <h1 className="heading-display max-w-4xl mx-auto mb-6">
-              Strategic Private Lending for Real Estate Investors
+            <h1 className="heading-display max-w-5xl mx-auto mb-6">
+              Strategic Private Lending<br className="hidden md:block" /> for Real Estate Investors
             </h1>
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
               Y2K Lending provides dependable financing solutions designed for investors who need reliable capital to act on real estate opportunities with confidence and speed.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Link
                 to="/what-we-offer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg"
@@ -48,6 +56,24 @@ const Home = () => {
               >
                 Submit a Loan Request
               </Link>
+            </div>
+            
+            {/* Credibility Strip */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+              {credibilityItems.map((item, index) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
+                  className="flex flex-col items-center text-center"
+                >
+                  <div className="w-10 h-10 mb-3 rounded-full bg-primary-light/50 flex items-center justify-center">
+                    <item.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground/80">{item.title}</span>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>
