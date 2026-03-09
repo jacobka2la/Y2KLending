@@ -43,7 +43,7 @@ const Home = () => {
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
               Y2K Lending provides dependable financing solutions designed for investors who need reliable capital to act on real estate opportunities with confidence and speed.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Link
                 to="/what-we-offer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg"
@@ -56,6 +56,24 @@ const Home = () => {
               >
                 Submit a Loan Request
               </Link>
+            </div>
+            
+            {/* Credibility Strip */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+              {credibilityItems.map((item, index) => (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
+                  className="flex flex-col items-center text-center"
+                >
+                  <div className="w-10 h-10 mb-3 rounded-full bg-primary-light/50 flex items-center justify-center">
+                    <item.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground/80">{item.title}</span>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </div>
