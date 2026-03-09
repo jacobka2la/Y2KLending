@@ -7,10 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 text-center md:text-left">
           {/* Brand */}
           <div>
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-              <span className="inline-flex items-center justify-center w-[52px] h-[30px] rounded-md bg-background text-foreground text-lg font-bold font-body tracking-tight leading-none uppercase">Y2K</span>
-              <span className="text-base font-semibold font-body opacity-80 uppercase tracking-wide">Lending</span>
-            </div>
+            <h3 className="text-xl font-bold font-body text-primary-foreground mb-4">Y2K Lending</h3>
             <p className="text-sm opacity-60 leading-relaxed max-w-xs mx-auto md:mx-0">
               Strategic private lending solutions for real estate investors. Dependable capital, transparent terms, and efficient execution.
             </p>
