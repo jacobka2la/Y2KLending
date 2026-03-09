@@ -37,7 +37,7 @@ const Home = () => {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
             <span className="badge-accent mb-6 inline-block">Hard Money Lending</span>
-            <h1 className="heading-display max-w-5xl mx-auto mb-6 !text-4xl !md:text-5xl !lg:text-6xl">
+            <h1 className="font-heading max-w-5xl mx-auto mb-6 text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-none tracking-tight text-foreground">
               Strategic Hard Money Lending<br className="hidden md:block" /> for Real Estate Investors
             </h1>
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
