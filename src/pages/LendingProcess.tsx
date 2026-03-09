@@ -7,27 +7,32 @@ const steps = [
   {
     number: "01",
     title: "Initial Inquiry",
-    description: "The process begins with a conversation. You provide an overview of your deal, the property, your investment strategy, and your financing needs. This allows our team to understand the opportunity and determine how we can best assist.",
+    description:
+      "The process begins with a conversation. You provide an overview of your deal, the property, your investment strategy, and your financing needs. This allows our team to understand the opportunity and determine how we can best assist.",
   },
   {
     number: "02",
     title: "Deal Review",
-    description: "Our team conducts a thorough evaluation of the property, the proposed transaction, and the overall viability of the investment. We assess key factors including property value, location, condition, and the borrower's experience and track record.",
+    description:
+      "Our team conducts a thorough evaluation of the property, the proposed transaction, and the overall viability of the investment. We assess key factors including property value, location, condition, and the borrower's experience and track record.",
   },
   {
     number: "03",
     title: "Underwriting",
-    description: "Once the initial review is complete, our underwriting team performs a detailed analysis of the deal. This includes valuation assessment, risk evaluation, and structuring of loan terms that align with the specifics of the transaction.",
+    description:
+      "Once the initial review is complete, our underwriting team performs a detailed analysis of the deal. This includes valuation assessment, risk evaluation, and structuring of loan terms that align with the specifics of the transaction.",
   },
   {
     number: "04",
     title: "Terms and Approval",
-    description: "Upon completion of underwriting, we present clear and comprehensive loan terms for your review. All rates, fees, timelines, and conditions are communicated transparently so you can make an informed decision with full confidence.",
+    description:
+      "Upon completion of underwriting, we present clear and comprehensive loan terms for your review. All rates, fees, timelines, and conditions are communicated transparently so you can make an informed decision with full confidence.",
   },
   {
     number: "05",
     title: "Funding",
-    description: "Once terms are agreed upon and all conditions are satisfied, funds are disbursed promptly. Our commitment to efficiency ensures that your capital is available when you need it, allowing you to execute on your investment without delay.",
+    description:
+      "Once terms are agreed upon and all conditions are satisfied, funds are disbursed promptly. Our commitment to efficiency ensures that your capital is available when you need it, allowing you to execute on your investment without delay.",
   },
 ];
 
@@ -45,7 +50,8 @@ const LendingProcess = () => {
             <span className="badge-accent mb-4 inline-block">How It Works</span>
             <h1 className="heading-display mb-6">Our Lending Process</h1>
             <p className="text-body-lg">
-              We have designed a lending process that is efficient, transparent, and respectful of your time. From first contact to funding, every step is structured to provide clarity and confidence.
+              We have designed a lending process that is efficient, transparent, and respectful of your time. From first
+              contact to funding, every step is structured to provide clarity and confidence.
             </p>
           </AnimatedSection>
         </div>
@@ -83,7 +89,8 @@ const LendingProcess = () => {
           <AnimatedSection>
             <h2 className="heading-section mb-6">Begin the Process Today</h2>
             <p className="text-body-lg mb-8">
-              Submit your loan request and our team will initiate a review promptly. We look forward to understanding your deal and exploring how Y2K Lending can support your investment.
+              Submit your loan request and our team will initiate a review promptly. We look forward to understanding
+              your deal and exploring how Y2K Lending can support your investment.
             </p>
             <Link
               to="/loan-request"
@@ -99,4 +106,3 @@ const LendingProcess = () => {
 };
 
 export default LendingProcess;
-google-site-verification: google2992538043ca41d0.html
