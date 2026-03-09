@@ -28,7 +28,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200 ${
+                className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200 text-center ${
                   isActive
                     ? "text-primary bg-primary-light"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
