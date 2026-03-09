@@ -27,6 +27,7 @@ const Home = () => {
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
         <div className="absolute inset-0">
           <img src={cityBg} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/60 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/80 to-background" />
         </div>
         <div className="relative section-container text-center py-28 md:py-40 lg:py-48">
