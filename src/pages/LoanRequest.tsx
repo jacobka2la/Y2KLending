@@ -66,11 +66,11 @@ const LoanRequest = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className={labelClasses}>Full Name *</label>
-                  <input type="text" id="name" name="name" required maxLength={100} className={inputClasses} placeholder="John Smith" />
+                  <input type="text" id="name" name="name" required maxLength={100} className={inputClasses} placeholder="John Doe" />
                 </div>
                 <div>
                   <label htmlFor="email" className={labelClasses}>Email Address *</label>
-                  <input type="email" id="email" name="email" required maxLength={255} className={inputClasses} placeholder="john@example.com" />
+                  <input type="email" id="email" name="email" required maxLength={255} className={inputClasses} placeholder="john@doe.com" />
                 </div>
               </div>
 
@@ -82,7 +82,7 @@ const LoanRequest = () => {
                 </div>
                 <div>
                   <label htmlFor="loanAmount" className={labelClasses}>Loan Amount Requested *</label>
-                  <input type="text" id="loanAmount" name="loanAmount" required maxLength={50} className={inputClasses} placeholder="$250,000" />
+                  <input type="text" id="loanAmount" name="loanAmount" required maxLength={50} className={inputClasses} placeholder="$xxx,xxx" />
                 </div>
               </div>
 
