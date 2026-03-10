@@ -41,7 +41,7 @@ const Home = () => {
               Strategic Hard Money Lending<br className="hidden md:block" /> for Real Estate Investors
             </h1>
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
-              Y2K Lending provides dependable hard money lending across Michigan, offering fast private financing for real estate investors, fix-and-flip projects, and short-term property opportunities.
+              Y2K Lending provides dependable Hard Money Lending across Michigan, offering fast private financing for real estate investors, fix-and-flip projects, and short-term property opportunities.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Link
