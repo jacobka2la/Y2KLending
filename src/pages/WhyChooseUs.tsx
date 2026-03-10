@@ -49,9 +49,7 @@ const WhyChooseUs = () => {
         <div className="relative section-container text-center max-w-3xl">
           <AnimatedSection>
             <span className="badge-accent mb-4 inline-block">Our Strengths</span>
-            <h1 className="heading-display mb-6">
-  Why Choose <span className="font-sans">Y2K Lending</span>
-</h1>
+            <h1 className="heading-display mb-6">Why Choose Y2K Lending</h1>
             <p className="text-body-lg">
               Borrowers choose Y2K Lending because we deliver on our commitments with professionalism, transparency, and a genuine commitment to their investment success.
             </p>
