@@ -1,3 +1,4 @@
+import HardMoneyMichigan from "./pages/HardMoneyMichigan";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/loan-request" element={<LoanRequest />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/hard-money-lending-michigan" element={<HardMoneyMichigan />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
