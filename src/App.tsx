@@ -11,6 +11,7 @@ import LendingProcess from "./pages/LendingProcess";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import LoanRequest from "./pages/LoanRequest";
 import NotFound from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/react";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/hard-money-lending-michigan" element={<HardMoneyMichigan />} />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </TooltipProvider>
   </QueryClientProvider>
 );
