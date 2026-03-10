@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold font-body text-primary-foreground mb-4">Y2K Lending</h3>
             <p className="text-sm opacity-60 leading-relaxed max-w-xs mx-auto md:mx-0">
-              Strategic hard money lending solutions for real estate investors. Dependable capital, transparent terms, and efficient execution.
+              Strategic Hard Money Lending solutions for real estate investors. Dependable capital, transparent terms, and efficient execution.
             </p>
           </div>
 
