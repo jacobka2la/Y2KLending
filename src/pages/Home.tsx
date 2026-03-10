@@ -89,7 +89,7 @@ const Home = () => {
 
           <AnimatedSection delay={0.1}>
             <p className="text-body mb-6">
-              Y2K Lending is a hard money lending firm dedicated to serving real estate investors who require timely, dependable capital. Founded on the principle that borrowers deserve a lending partner who operates with the same discipline and urgency as the investors it serves, our firm has established a reputation for consistent execution and transparent dealings.
+              Y2K Lending is a Hard Money lending firm dedicated to serving real estate investors who require timely, dependable capital. Founded on the principle that borrowers deserve a lending partner who operates with the same discipline and urgency as the investors it serves, our firm has established a reputation for consistent execution and transparent dealings.
             </p>
           </AnimatedSection>
 
