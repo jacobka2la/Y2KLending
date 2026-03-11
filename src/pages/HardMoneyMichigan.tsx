@@ -4,7 +4,7 @@ export default function HardMoneyMichigan() {
       <h1>Hard Money Lending in Michigan</h1>
 
       <p>
-        Y2K Lending provides hard money lending for real estate investors across Michigan.
+        Y2K Lending provides Hard Money Lending for real estate investors across Michigan.
         We offer fast private lending solutions for fix-and-flip projects, rental property
         acquisitions, and short-term real estate investments.
       </p>
@@ -25,7 +25,7 @@ export default function HardMoneyMichigan() {
 
       <h2>Work With Y2K Lending</h2>
       <p>
-        If you are looking for hard money lending in Michigan, Y2K Lending provides
+        If you are looking for Hard Money Lending in Michigan, Y2K Lending provides
         private real estate financing built for speed, flexibility, and investor success.
       </p>
     </main>
