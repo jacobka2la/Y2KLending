@@ -1,6 +1,6 @@
 # Y2K Lending
 
-Official website for Y2K Lending, a private hard money lending company focused on financing real estate investment opportunities.
+Official website for Y2K Lending, a private Hard Money Lending company focused on financing real estate investment opportunities.
 
 ## Website
 https://y2klendingdone.vercel.app
