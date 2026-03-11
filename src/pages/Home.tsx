@@ -41,7 +41,7 @@ const Home = () => {
   Hard Money Lending in Michigan<br className="hidden md:block" /> For Real Estate Investors
             </h1>
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
-Y2K Lending provides hard money loans for real estate investors throughout Michigan, including Detroit and surrounding markets. We specialize in fix and flip loans, bridge financing, and fast private lending for investment properties.
+Y2K Lending provides Hard Money loans for real estate investors throughout Michigan, including Detroit and surrounding markets. We specialize in fix and flip loans, bridge financing, and fast private lending for investment properties.
 </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Link
@@ -156,3 +156,14 @@ Y2K Lending provides hard money loans for real estate investors throughout Michi
 };
 
 export default Home;
+<section className="section-padding">
+  <div className="section-container max-w-4xl text-center">
+    <h2 className="heading-section mb-6">
+      Hard Money Loans in Michigan
+    </h2>
+
+    <p className="text-body-lg">
+      Y2K Lending provides private lending solutions for real estate investors across Michigan, including Detroit, Grand Rapids, Ann Arbor, and Lansing. Our hard money loans help investors secure fast funding for fix and flip projects, bridge financing, and short-term real estate investments.
+    </p>
+  </div>
+</section>
