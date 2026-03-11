@@ -8,8 +8,10 @@ const LoanRequest = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  e.preventDefault();
+
+  if (isSubmitting) return;
+  setIsSubmitting(true);
 
     const form = e.currentTarget;
     const formData = new FormData(form);
