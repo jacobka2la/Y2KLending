@@ -38,7 +38,7 @@ const Home = () => {
           >
             <span className="badge-accent mb-6 inline-block">Hard Money Lending</span>
             <h1 className="font-heading max-w-5xl mx-auto mb-6 text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-none tracking-tight text-foreground">
-  Hard Money Lending in Michigan<br className="hidden md:block" /> For Real Estate Investors
+  Hard Money Lending in Metro Detroit<br className="hidden md:block" /> &amp; Across Michigan
             </h1>
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
 Y2K Lending provides Hard Money loans for real estate investors throughout Michigan, including Detroit and surrounding markets. We specialize in fix and flip loans, bridge financing, and fast private lending for investment properties.
@@ -104,6 +104,19 @@ Y2K Lending provides Hard Money loans for real estate investors throughout Michi
               At Y2K Lending, we do not view our borrowers as transactions. We see each loan as the beginning of a professional relationship built on mutual respect, shared objectives, and a commitment to results. Whether you are an experienced investor scaling a portfolio or executing your next acquisition, we are prepared to serve as a trusted capital partner.
             </p>
           </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="section-padding bg-background">
+        <div className="section-container max-w-4xl">
+          <h2 className="heading-section mb-6">Private Real Estate Lending for Detroit Investors</h2>
+          <p className="text-body mb-6">Buying an investment property, planning a renovation, or arranging your next acquisition? Y2K Lending works with real estate investors in Detroit, the surrounding Metro Detroit market, and throughout Michigan. Our financing options include fix-and-flip loans and bridge financing for investment properties.</p>
+          <p className="text-body mb-6">Start with the property address, the amount you need, your project plan, and how you expect to repay the loan. These details help our team understand the transaction and discuss financing options for your deal.</p>
+          <div className="flex flex-wrap gap-6 text-primary font-semibold">
+            <Link to="/hard-money-lending-michigan" className="underline">Michigan hard money lending guide</Link>
+            <Link to="/what-we-offer" className="underline">Fix-and-flip and bridge loan options</Link>
+            <Link to="/lending-process" className="underline">How the lending process works</Link>
+          </div>
         </div>
       </section>
 

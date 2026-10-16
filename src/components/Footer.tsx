@@ -19,6 +19,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               {[
                 { label: "Who We Are", path: "/" },
+                { label: "Michigan Hard Money Loans", path: "/hard-money-lending-michigan" },
                 { label: "What We Offer", path: "/what-we-offer" },
                 { label: "Lending Process", path: "/lending-process" },
                 { label: "Why Choose Us", path: "/why-choose-us" },
