@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/what-we-offer",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/lending-process",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/why-choose-us",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/loan-request",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/hard-money-lending-michigan",
+      "destination": "/index.html"
+    }
+  ]
+}
