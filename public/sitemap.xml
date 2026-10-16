@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://y2klendingdone.vercel.app/</loc>
-</url>
-
-<url>
-<loc>https://y2klendingdone.vercel.app/who-we-are</loc>
-</url>
-
-<url>
-<loc>https://y2klendingdone.vercel.app/what-we-offer</loc>
-</url>
-
-<url>
-<loc>https://y2klendingdone.vercel.app/why-choose-us</loc>
-</url>
-
-<url>
-<loc>https://y2klendingdone.vercel.app/submit-loan-request</loc>
-</url>
-
+  <url><loc>https://www.y2klending.com/</loc></url>
+  <url><loc>https://www.y2klending.com/what-we-offer</loc></url>
+  <url><loc>https://www.y2klending.com/lending-process</loc></url>
+  <url><loc>https://www.y2klending.com/why-choose-us</loc></url>
+  <url><loc>https://www.y2klending.com/loan-request</loc></url>
+  <url><loc>https://www.y2klending.com/hard-money-lending-michigan</loc></url>
 </urlset>
