@@ -15,6 +15,12 @@ const pages = [
   ["/hard-money-lending-michigan", "Michigan Hard Money Loans & Private Lending | Y2K Lending", "Explore hard money lending for Michigan investment properties, including Metro Detroit. Learn about fix-and-flip financing, bridge loans, and preparing a loan inquiry."]
 ];
 const escapeHtml = s => s.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+const renderablePages = {
+  "/what-we-offer": "/src/pages/WhatWeOffer.tsx",
+  "/lending-process": "/src/pages/LendingProcess.tsx",
+  "/why-choose-us": "/src/pages/WhyChooseUs.tsx",
+  "/hard-money-lending-michigan": "/src/pages/HardMoneyMichigan.tsx"
+};
 const vite = await createServer({ server: { middlewareMode: true }, appType: "custom", logLevel: "error" });
 try {
 for (const [route, title, description] of pages) {
@@ -28,10 +34,10 @@ for (const [route, title, description] of pages) {
     .replace(/(<meta name="twitter:title" content=")[^"]*(")/, (_, a, b) => a + escapeHtml(title) + b)
     .replace(/(<meta property="og:description" content=")[^"]*(")/, (_, a, b) => a + escapeHtml(description) + b)
     .replace(/(<meta name="twitter:description" content=")[^"]*(")/, (_, a, b) => a + escapeHtml(description) + b);
-  if (route === "/hard-money-lending-michigan") {
-    const { default: Page } = await vite.ssrLoadModule("/src/pages/HardMoneyMichigan.tsx");
+  if (renderablePages[route]) {
+    const { default: Page } = await vite.ssrLoadModule(renderablePages[route]);
     const content = renderToString(React.createElement(MemoryRouter, { initialEntries: [route] }, React.createElement(Page)));
-    if (!content.includes("Financing a Detroit Fix-and-Flip Project")) throw new Error("SSR content missing Michigan page headings");
+    if (!content.includes("<main")) throw new Error("SSR content missing main element for " + route);
     html = html.replace('<div id="root"></div>', '<div id="root">' + content + '</div>');
   }
   const directory = join(root, route.slice(1));
@@ -39,4 +45,4 @@ for (const [route, title, description] of pages) {
   writeFileSync(join(directory, "index.html"), html);
 }
 } finally { await vite.close(); }
-console.log("Generated route-specific HTML metadata for " + pages.length + " pages, including Michigan page SSR.");
+console.log("Generated route-specific HTML metadata for " + pages.length + " pages, including public informational page SSR.");
