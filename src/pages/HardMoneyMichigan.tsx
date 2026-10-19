@@ -31,6 +31,7 @@ export default function HardMoneyMichigan() {
           <p className="text-body mb-8">Submit the loan request form with your project details. The team will review your inquiry and contact you to discuss your financing needs. An inquiry does not guarantee approval or funding.</p>
           <div className="flex flex-wrap gap-6 items-center">
             <Link to="/loan-request" className="inline-flex px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold">Request Investment Property Financing</Link>
+            <Link to="/hard-money-lenders-detroit" className="text-primary underline">Detroit hard money loans</Link>
             <Link to="/what-we-offer" className="text-primary underline">Explore loan options</Link>
             <Link to="/lending-process" className="text-primary underline">Review the lending process</Link>
           </div>

@@ -12,6 +12,7 @@ const pages = [
   ["/lending-process", "Real Estate Investment Loan Process | Y2K Lending", "Learn how to request investment property financing with Y2K Lending, from your initial inquiry and property review to loan terms and closing."],
   ["/why-choose-us", "Private Real Estate Lending in Michigan | Y2K Lending", "Learn about Y2K Lending's approach to private real estate financing for Michigan investors, with a focus on communication, property evaluation, and execution."],
   ["/loan-request", "Request a Michigan Investment Property Loan | Y2K Lending", "Submit your Michigan real estate loan inquiry. Share the property address, requested loan amount, project details, exit strategy, and funding timeline."],
+  ["/hard-money-lenders-detroit", "Hard Money Lenders Detroit | Y2K Lending", "Explore hard money lending for Detroit investment properties, fix-and-flip projects, and bridge financing. Submit a Detroit real estate loan inquiry."],
   ["/hard-money-lending-michigan", "Michigan Hard Money Loans & Private Lending | Y2K Lending", "Explore hard money lending for Michigan investment properties, including Metro Detroit. Learn about fix-and-flip financing, bridge loans, and preparing a loan inquiry."]
 ];
 const escapeHtml = s => s.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
@@ -19,6 +20,7 @@ const renderablePages = {
   "/what-we-offer": "/src/pages/WhatWeOffer.tsx",
   "/lending-process": "/src/pages/LendingProcess.tsx",
   "/why-choose-us": "/src/pages/WhyChooseUs.tsx",
+  "/hard-money-lenders-detroit": "/src/pages/HardMoneyDetroit.tsx",
   "/hard-money-lending-michigan": "/src/pages/HardMoneyMichigan.tsx"
 };
 const vite = await createServer({ server: { middlewareMode: true }, appType: "custom", logLevel: "error" });

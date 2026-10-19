@@ -1,3 +1,4 @@
+import HardMoneyDetroit from "./pages/HardMoneyDetroit";
 import HardMoneyMichigan from "./pages/HardMoneyMichigan";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
           <Route path="/loan-request" element={<LoanRequest />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/hard-money-lenders-detroit" element={<HardMoneyDetroit />} />
           <Route path="/hard-money-lending-michigan" element={<HardMoneyMichigan />} />
         </Routes>
       </BrowserRouter>
