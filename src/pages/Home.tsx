@@ -113,9 +113,11 @@ Y2K Lending provides Hard Money loans for real estate investors throughout Michi
           <p className="text-body mb-6">Buying an investment property, planning a renovation, or arranging your next acquisition? Y2K Lending works with real estate investors in Detroit, the surrounding Metro Detroit market, and throughout Michigan. Our financing options include fix-and-flip loans and bridge financing for investment properties.</p>
           <p className="text-body mb-6">Start with the property address, the amount you need, your project plan, and how you expect to repay the loan. These details help our team understand the transaction and discuss financing options for your deal.</p>
           <div className="flex flex-wrap gap-6 text-primary font-semibold">
+            <Link to="/hard-money-lenders-detroit" className="underline">Detroit hard money loans</Link>
             <Link to="/hard-money-lending-michigan" className="underline">Michigan hard money lending guide</Link>
             <Link to="/what-we-offer" className="underline">Fix-and-flip and bridge loan options</Link>
             <Link to="/lending-process" className="underline">How the lending process works</Link>
+            <Link to="/loan-request" className="underline">Request financing for your property</Link>
           </div>
         </div>
       </section>
@@ -169,14 +171,3 @@ Y2K Lending provides Hard Money loans for real estate investors throughout Michi
 };
 
 export default Home;
-<section className="section-padding">
-  <div className="section-container max-w-4xl text-center">
-    <h2 className="heading-section mb-6">
-      Hard Money Loans in Michigan
-    </h2>
-
-    <p className="text-body-lg">
-      Y2K Lending provides private lending solutions for real estate investors across Michigan, including Detroit, Grand Rapids, Ann Arbor, and Lansing. Our hard money loans help investors secure fast funding for fix and flip projects, bridge financing, and short-term real estate investments.
-    </p>
-  </div>
-</section>
