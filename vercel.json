@@ -2,23 +2,23 @@
   "rewrites": [
     {
       "source": "/what-we-offer",
-      "destination": "/index.html"
+      "destination": "/what-we-offer/index.html"
     },
     {
       "source": "/lending-process",
-      "destination": "/index.html"
+      "destination": "/lending-process/index.html"
     },
     {
       "source": "/why-choose-us",
-      "destination": "/index.html"
+      "destination": "/why-choose-us/index.html"
     },
     {
       "source": "/loan-request",
-      "destination": "/index.html"
+      "destination": "/loan-request/index.html"
     },
     {
       "source": "/hard-money-lending-michigan",
-      "destination": "/index.html"
+      "destination": "/hard-money-lending-michigan/index.html"
     }
   ]
 }
