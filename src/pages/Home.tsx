@@ -124,13 +124,16 @@ Y2K Lending provides Hard Money loans for real estate investors throughout Michi
 
       {/* Leadership */}
       <section className="section-padding bg-muted">
-        <div className="section-container max-w-4xl">
+        <div className="section-container max-w-6xl grid md:grid-cols-[260px_1fr] gap-10 items-center">
+          <img src="data:image/webp;base64,UklGRnwDAABXRUJQVlA4IHADAADwIQCdASqgAMgAP0WexlwwK7EsI3baoiAoiWlu3WBlkfKZ47lM8dkAISi94I4cTmsqW8d+It5yjv5RPxGsQUxmp/P1zH7nA7xSmqIZveeRI9aa/V5CyTUxc2JYyFurTtRPJMD9+rcMQTHVamdu8Hr2YwQ2V6+58mgeuCG8M/2lgpNX+sXtVOTY+glUddAz6LwGW0uYQmPhlAukr7nwKNCWZWbK3tvK1vR9k89eEBQZHI1K080rVlNOxwm0e3mLKc9YbEYGI3HVV7Mw8qTrGqCctM/kfMKFRiMKhT1AKLKzKa52f/oa/gsx+/naQF2Rmy0o5TYc/XxLQkj+wAqWETjYBpWKJ7nwgxHBU34p+caXAlvyk0Sz3MaAAP7wNMCrsf/84F2FSJlIJzUQVnUYfXl88lPDedIK82jfD+RsgKQIxRcBWvgEHHtbZGpwQr3k7CBkPJLdX31Ppea1GLJGC7vpTHGJRdU51vgrpu3lteIvxi0knPy9xcYvjt85VsoVKOT4FGlBA07KuQ7WEg2nuLRT3tjqbAqinFJSnDc/oyX4CS9EqvWALN91S8bn8IUft/NHwcFTAjKc5C83bPv4NXDhMUoipxIzeSN+IjtRaUNTKXzmo/8Urk80uRB2lHTU3eTEtY/2l3yh13mDxTJK7Z+7DbS9Dg/BlI/u2/hRNCJ4eu6vpqJnGtcabqCStNKKqGvCnO8GWzKAUgmAm/giJy2De/e69GUma4QngGrMd5dleqVGF0w4ftqys8Mi0jVrFQ8rvfM3Y9L2HHbMDtJIvEr0QesT/vze/SNkjX8eqZBfCLfxYhX/99wZ/6hMeWq28Hgmr0Bl3DJ9ZtKLPTGSIU+Wq8yI0XVCTYXw3QWO28R84iM/bXuf8mHvaBVk2SK3IUdJMy4FS1HL4APNxIx3eUFTc18VAN7YsLkJ86C5au/65thv0j/BPHKDxfc7DYXwMRJPRqTzx1qylvvFMvzNTUcodfj8nxVnPKBNTodj0lDP1K7YHUmkPWoIfGNeWdb4+1uZPv8AuOgpndU9zulM1lsCwtStZVKWPkynbdbJ8e7z9VGoVz/5uIgyUs1sCpbRcAD8bWzmKe7DCxhTe8y0vX9romsjUHvX6i7ASxoEniB3GC2+38gKns6Dzmta7gTfO32Qg43vfmdHZxnla57BiAAA" alt="Mark Kattula, CEO of Y2K Lending" width="160" height="200" className="w-full max-w-[260px] rounded-xl" />
+          <div>
           <span className="badge-accent mb-4 inline-block">Meet Our Leadership</span>
           <h2 className="heading-section mb-4">Mark Kattula, CEO of Y2K Lending</h2>
           <p className="text-body mb-5">Y2K Lending is led by Mark Kattula, a Michigan real estate associate broker with experience working with buyers and sellers across Metro Detroit. His background in real estate transactions brings a practical understanding of property values, negotiations, and the decisions investors face when evaluating opportunities.</p>
           <p className="text-body mb-5">Mark's public real estate profile on Homes.com reports 161 closed sales and $74.4 million in transaction value over its stated reporting period. His track record reflects hands-on knowledge of Metro Detroit real estate, from understanding property values to navigating transactions and investor decisions.</p>
           <p className="text-body mb-5">Learn more about Mark's professional background and transaction history through his <a href="https://markkattula.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline">official real estate website</a> and <a href="https://www.homes.com/real-estate-agents/mark-kattula/es1r38n/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Homes.com profile</a>.</p>
           <Link to="/loan-request" className="inline-flex px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold">Discuss Your Investment Property</Link>
+          </div>
         </div>
       </section>
 
