@@ -7,17 +7,17 @@ import cityBg from "@/assets/city-bg.jpg";
 import patternBg from "@/assets/pattern-bg.jpg";
 
 const coreValues = [
-  { icon: Shield, title: "Integrity", description: "Every transaction is conducted with complete transparency and ethical standards that protect all parties involved." },
-  { icon: Zap, title: "Speed", description: "Time-sensitive opportunities require swift action. Our streamlined processes are built to deliver capital when it matters most." },
+  { icon: Shield, title: "Integrity", description: "We aim to communicate clearly about each financing inquiry and the proposed terms." },
+  { icon: Zap, title: "Speed", description: "Time-sensitive opportunities require swift action. We work to review project details promptly when investors have time-sensitive opportunities." },
   { icon: Eye, title: "Clarity", description: "From initial inquiry to final funding, every term, timeline, and expectation is communicated with precision." },
-  { icon: Anchor, title: "Reliability", description: "When we commit to a deal, we execute. Our borrowers trust us to follow through on every agreement without exception." },
+  { icon: Anchor, title: "Reliability", description: "We prioritize clear expectations and timely communication throughout the lending process." },
 ];
 
 const credibilityItems = [
-  { icon: Clock, title: "Fast Closings" },
+  { icon: Clock, title: "Time-Sensitive Inquiries" },
   { icon: Building, title: "Asset-Based Lending" },
   { icon: Briefcase, title: "Investor-Focused Financing" },
-  { icon: Coins, title: "Reliable Capital" },
+  { icon: Coins, title: "Deal-Focused Review" },
 ];
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
   Hard Money Lending in Metro Detroit<br className="hidden md:block" /> &amp; Across Michigan
             </h1>
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
-Y2K Lending provides Hard Money loans for real estate investors throughout Michigan, including Detroit and surrounding markets. We specialize in fix and flip loans, bridge financing, and fast private lending for investment properties.
+Y2K Lending provides Hard Money loans for real estate investors throughout Michigan, including Detroit and surrounding markets. Our website discusses fix-and-flip projects, bridge financing inquiries, and private lending for investment properties.
 </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Link
@@ -89,13 +89,13 @@ Y2K Lending provides Hard Money loans for real estate investors throughout Michi
 
           <AnimatedSection delay={0.1}>
             <p className="text-body mb-6">
-              Y2K Lending is a Hard Money lending firm dedicated to serving real estate investors who require timely, dependable capital. Founded on the principle that borrowers deserve a lending partner who operates with the same discipline and urgency as the investors it serves, our firm has established a reputation for consistent execution and transparent dealings.
+              Y2K Lending is a Hard Money lending firm dedicated to serving real estate investors who require timely, dependable capital. Founded on the principle that borrowers deserve a lending partner who operates with the same discipline and urgency as the investors it serves, our goal is to offer clear communication and a thoughtful review of each financing request.
             </p>
           </AnimatedSection>
 
           <AnimatedSection delay={0.15}>
             <p className="text-body mb-6">
-              Our team brings together deep expertise in real estate finance, underwriting, and asset evaluation. We understand the complexities of investment transactions and the critical role that reliable financing plays in capitalizing on opportunities. Every engagement is handled with a commitment to clear communication, fair terms, and a thorough understanding of the deal at hand.
+              Led by Mark Kattula, a Michigan real estate associate broker, Y2K Lending draws on practical experience with real estate transactions and property evaluation. We understand the complexities of investment transactions and the critical role that reliable financing plays in capitalizing on opportunities. Every engagement is handled with a commitment to clear communication, fair terms, and a thorough understanding of the deal at hand.
             </p>
           </AnimatedSection>
 
