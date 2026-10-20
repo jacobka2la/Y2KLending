@@ -122,6 +122,18 @@ Y2K Lending provides Hard Money loans for real estate investors throughout Michi
         </div>
       </section>
 
+      {/* Leadership */}
+      <section className="section-padding bg-muted">
+        <div className="section-container max-w-4xl">
+          <span className="badge-accent mb-4 inline-block">Meet Our Leadership</span>
+          <h2 className="heading-section mb-4">Mark Kattula, CEO of Y2K Lending</h2>
+          <p className="text-body mb-5">Y2K Lending is led by Mark Kattula, a Michigan real estate associate broker with experience working with buyers and sellers across Metro Detroit. His background in real estate transactions brings a practical understanding of property values, negotiations, and the decisions investors face when evaluating opportunities.</p>
+          <p className="text-body mb-5">Mark's public real estate profile on Homes.com reports 161 closed sales and $74.4 million in transaction value over its stated reporting period. These figures describe his real estate brokerage experience, not loans originated or funded by Y2K Lending.</p>
+          <p className="text-body mb-5">Learn more about Mark's professional background and transaction history through his <a href="https://markkattula.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline">official real estate website</a> and <a href="https://www.homes.com/real-estate-agents/mark-kattula/es1r38n/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Homes.com profile</a>.</p>
+          <Link to="/loan-request" className="inline-flex px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold">Discuss Your Investment Property</Link>
+        </div>
+      </section>
+
       {/* Core Values */}
       <section className="section-padding bg-muted">
         <div className="section-container text-center">
