@@ -72,6 +72,8 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    font-variant-numeric: lining-nums;
+    font-feature-settings: 'lnum' 1;
   }
 }
 
@@ -129,4 +131,10 @@
   .gradient-primary {
     background: var(--hero-gradient);
   }
+}
+
+/* Playfair Display defaults to oldstyle figures; use full-height numerals sitewide. */
+.font-heading, .heading-display, .heading-section, .heading-card {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: 'lnum' 1;
 }
