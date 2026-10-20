@@ -38,10 +38,10 @@ const Home = () => {
           >
             <span className="badge-accent mb-6 inline-block">Hard Money Lending</span>
             <h1 className="font-heading max-w-5xl mx-auto mb-6 text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-none tracking-tight text-foreground">
-  Hard Money Lending in Metro Detroit<br className="hidden md:block" /> &amp; Across Michigan
+  Hard Money Lending Across Michigan
             </h1>
             <p className="text-body-lg max-w-2xl mx-auto mb-10">
-Y2K Lending provides Hard Money loans for real estate investors throughout Michigan, including Detroit and surrounding markets. Our website discusses fix-and-flip projects, bridge financing inquiries, and private lending for investment properties.
+Y2K Lending works with real estate investors across Michigan, including Metro Detroit. Contact our team to discuss private lending for investment property acquisitions, fix-and-flip projects, and bridge financing.
 </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Link
@@ -109,12 +109,12 @@ Y2K Lending provides Hard Money loans for real estate investors throughout Michi
 
       <section className="section-padding bg-background">
         <div className="section-container max-w-4xl">
-          <h2 className="heading-section mb-6">Private Real Estate Lending for Detroit Investors</h2>
-          <p className="text-body mb-6">Buying an investment property, planning a renovation, or arranging your next acquisition? Y2K Lending works with real estate investors in Detroit, the surrounding Metro Detroit market, and throughout Michigan. Our financing options include fix-and-flip loans and bridge financing for investment properties.</p>
+          <h2 className="heading-section mb-6">Private Real Estate Lending Across Michigan</h2>
+          <p className="text-body mb-6">Buying an investment property, planning a renovation, or arranging your next acquisition? Y2K Lending works with real estate investors throughout Michigan, including Metro Detroit. Our financing options include fix-and-flip loans and bridge financing for investment properties.</p>
           <p className="text-body mb-6">Start with the property address, the amount you need, your project plan, and how you expect to repay the loan. These details help our team understand the transaction and discuss financing options for your deal.</p>
           <div className="flex flex-wrap gap-6 text-primary font-semibold">
-            <Link to="/hard-money-lenders-detroit" className="underline">Detroit hard money loans</Link>
-            <Link to="/hard-money-lending-michigan" className="underline">Michigan hard money lending guide</Link>
+            <Link to="/hard-money-lending-michigan" className="underline">Michigan hard money lending</Link>
+            <Link to="/hard-money-lenders-detroit" className="underline">Metro Detroit lending</Link>
             <Link to="/what-we-offer" className="underline">Fix-and-flip and bridge loan options</Link>
             <Link to="/lending-process" className="underline">How the lending process works</Link>
             <Link to="/loan-request" className="underline">Request financing for your property</Link>
