@@ -40,6 +40,7 @@ const Navbar = () => {
             );
           })}
         </div>
+        <a href="tel:+15868998881" className="ml-3 shrink-0 text-sm font-semibold text-foreground hover:text-primary" aria-label="Call Y2K Lending at 586-899-8881">586-899-8881</a>
       </div>
 
       {/* Mobile Layout */}
@@ -52,6 +53,10 @@ const Navbar = () => {
           </Link>
         </div>
 
+        <div className="flex items-center justify-center gap-5 pb-2 text-xs font-semibold">
+          <a href="tel:+15868998881" className="text-foreground">Call 586-899-8881</a>
+          <a href="mailto:mark@y2klending.com" className="text-foreground">Email Mark</a>
+        </div>
         {/* Scrollable Navigation Row */}
         <div className="overflow-x-auto border-t border-border scrollbar-hide">
           <div className="flex items-center gap-1 px-4 py-2 w-max">
