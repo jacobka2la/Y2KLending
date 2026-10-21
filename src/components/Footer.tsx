@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold font-body text-primary-foreground mb-4">Y2K Lending</h3>
             <p className="text-sm opacity-60 leading-relaxed max-w-xs mx-auto md:mx-0">
-              Strategic Hard Money Lending solutions for real estate investors. Dependable capital, transparent terms, and efficient execution.
+              Michigan-focused private real estate lending for investors. Contact our team to discuss your property and financing goals.
             </p>
           </div>
 
@@ -43,6 +43,10 @@ const Footer = () => {
             <p className="text-sm opacity-60 leading-relaxed">
               Ready to discuss your next real estate investment? Submit a loan request or reach out to our team directly.
             </p>
+            <div className="mt-4 flex flex-col gap-2 text-sm">
+              <a href="tel:+15868998881" className="font-semibold hover:underline">586-899-8881</a>
+              <a href="mailto:mark@y2klending.com" className="font-semibold hover:underline">mark@y2klending.com</a>
+            </div>
             <Link
               to="/loan-request"
               className="inline-block mt-4 px-6 py-2.5 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200"
