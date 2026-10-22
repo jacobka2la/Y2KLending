@@ -1,4 +1,4 @@
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useEffect } from "react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 import bgLoan from "@/assets/bg-loan.jpg";
@@ -6,6 +6,23 @@ import { toast } from "sonner";
 
 const LoanRequest = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    // Preserve the first known visit source during this browsing session.
+    try {
+      if (!sessionStorage.getItem("y2k_first_visit")) {
+        sessionStorage.setItem("y2k_first_visit", JSON.stringify({
+          landingPage: window.location.pathname,
+          referrer: document.referrer || "Direct / unknown",
+          utmSource: new URLSearchParams(window.location.search).get("utm_source") || "",
+          utmMedium: new URLSearchParams(window.location.search).get("utm_medium") || "",
+          utmCampaign: new URLSearchParams(window.location.search).get("utm_campaign") || ""
+        }));
+      }
+    } catch {
+      // Form remains functional when storage is unavailable.
+    }
+  }, []);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
   e.preventDefault();
@@ -15,6 +32,20 @@ const LoanRequest = () => {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+
+    // Attach marketing attribution to the actual submitted inquiry, not to every site visit.
+    try {
+      const firstVisit = JSON.parse(sessionStorage.getItem("y2k_first_visit") || "{}");
+      const referrer = firstVisit.referrer || document.referrer || "Direct / unknown";
+      const source = firstVisit.utmSource || (referrer.includes("google.") ? "Google referral" : referrer.includes("bing.") ? "Bing referral" : referrer === "Direct / unknown" ? "Direct / unknown" : "Other referral");
+      formData.append("Lead Source", source);
+      formData.append("Landing Page", firstVisit.landingPage || window.location.pathname);
+      formData.append("Referrer", referrer);
+      formData.append("UTM Medium", firstVisit.utmMedium || "");
+      formData.append("UTM Campaign", firstVisit.utmCampaign || "");
+    } catch {
+      formData.append("Lead Source", "Unknown");
+    }
 
     try {
       const response = await fetch("https://formspree.io/f/xlgpgeld", {
