@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from "node:fs";
 import { join } from "node:path";
 import { createServer } from "vite";
 import React from "react";
@@ -6,6 +6,8 @@ import { renderToString } from "react-dom/server";
 import { MemoryRouter } from "react-router-dom";
 
 const root = "dist";
+// Stable, publicly accessible landscape image for link previews.
+copyFileSync("src/assets/city-bg.jpg", join(root, "social-preview.jpg"));
 const template = readFileSync(join(root, "index.html"), "utf8");
 const pages = [
   ["/", "Hard Money Lenders Michigan | Y2K Lending", "Explore hard money and private real estate lending across Michigan with Y2K Lending. Serving investors statewide, including Metro Detroit. Contact us about your project."],
