@@ -8,6 +8,7 @@ import { MemoryRouter } from "react-router-dom";
 const root = "dist";
 const template = readFileSync(join(root, "index.html"), "utf8");
 const pages = [
+  ["/", "Hard Money Lenders Michigan | Y2K Lending", "Explore hard money and private real estate lending across Michigan with Y2K Lending. Serving investors statewide, including Metro Detroit. Contact us about your project."],
   ["/what-we-offer", "Fix-and-Flip & Bridge Loans in Michigan | Y2K Lending", "Explore Michigan real estate investment financing: fix-and-flip loans, bridge loans, and asset-based lending. Find the right financing approach for your project."],
   ["/lending-process", "Real Estate Investment Loan Process | Y2K Lending", "Learn how to request investment property financing with Y2K Lending, from your initial inquiry and property review to loan terms and closing."],
   ["/why-choose-us", "Private Real Estate Lending in Michigan | Y2K Lending", "Learn about Y2K Lending's approach to private real estate financing for Michigan investors, with a focus on communication, property evaluation, and execution."],
@@ -17,6 +18,7 @@ const pages = [
 ];
 const escapeHtml = s => s.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 const renderablePages = {
+  "/": "/src/pages/Home.tsx",
   "/what-we-offer": "/src/pages/WhatWeOffer.tsx",
   "/lending-process": "/src/pages/LendingProcess.tsx",
   "/why-choose-us": "/src/pages/WhyChooseUs.tsx",
@@ -42,9 +44,14 @@ for (const [route, title, description] of pages) {
     if (!content.includes("<main")) throw new Error("SSR content missing main element for " + route);
     html = html.replace('<div id="root"></div>', '<div id="root">' + content + '</div>');
   }
-  const directory = join(root, route.slice(1));
-  mkdirSync(directory, { recursive: true });
-  writeFileSync(join(directory, "index.html"), html);
+  if (route === "/") {
+    // The homepage is the root index file, not a nested route.
+    writeFileSync(join(root, "index.html"), html);
+  } else {
+    const directory = join(root, route.slice(1));
+    mkdirSync(directory, { recursive: true });
+    writeFileSync(join(directory, "index.html"), html);
+  }
 }
 } finally { await vite.close(); }
-console.log("Generated route-specific HTML metadata for " + pages.length + " pages, including public informational page SSR.");
+console.log("Generated crawlable HTML for " + pages.length + " pages, including public informational page SSR.");
