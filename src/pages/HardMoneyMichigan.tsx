@@ -145,62 +145,6 @@ export default function HardMoneyMichigan() {
         </div>
       </section>
 
-      {/* Illustrative investor math, not an offer or an example of a Y2K-funded deal. */}
-      <section className="section-padding bg-background">
-        <div className="section-container max-w-5xl">
-          <AnimatedSection>
-            <div className="text-center max-w-3xl mx-auto mb-10">
-              <span className="badge-accent mb-4 inline-block">Investor Education</span>
-              <h2 className="heading-section mb-5">Example: Evaluating a Michigan Fix-and-Flip</h2>
-              <p className="text-body-lg">A purchase price is only one part of an investment decision. Here's a hypothetical way to organize the numbers before speaking with a lender.</p>
-            </div>
-          </AnimatedSection>
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <AnimatedSection>
-              <div className="card-elevated">
-                <h3 className="heading-card mb-6">Illustrative Project Budget</h3>
-                <dl className="space-y-4">
-                  {[
-                    ["Purchase price", "$140,000"],
-                    ["Estimated renovation", "$35,000"],
-                    ["Illustrative holding and transaction costs", "$15,000"]
-                  ].map(([label, amount]) => (
-                    <div key={label} className="flex justify-between gap-4 text-body border-b border-border pb-3">
-                      <dt>{label}</dt><dd className="font-semibold whitespace-nowrap">{amount}</dd>
-                    </div>
-                  ))}
-                  <div className="flex justify-between gap-4 pt-2">
-                    <dt className="font-semibold text-foreground">Illustrative total project cost</dt>
-                    <dd className="font-bold text-primary">$190,000</dd>
-                  </div>
-                </dl>
-                <p className="text-xs text-muted-foreground mt-6">Hypothetical numbers for education only. Not an actual Y2K Lending transaction, financing quote, underwriting guideline, or profit projection. Costs may be higher, and the example excludes any financing costs not otherwise captured.</p>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={0.1}>
-              <div className="card-elevated h-full">
-                <h3 className="heading-card mb-5">Questions to Ask Before You Buy</h3>
-                <ul className="space-y-4">
-                  {[
-                    "What do recent comparable sales suggest about the property's potential resale value?",
-                    "Does the renovation budget include a contingency for unexpected repairs?",
-                    "How will taxes, insurance, utilities, and financing costs affect the project?",
-                    "What happens if renovations take longer or the property sells for less than expected?",
-                    "Is the exit strategy a sale, refinance, or another clearly defined plan?"
-                  ].map(item => (
-                    <li key={item} className="flex items-start gap-3 text-body">
-                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/loan-request" className="inline-flex items-center gap-2 text-primary font-semibold underline mt-7">Discuss your own Michigan property <ArrowRight className="w-4 h-4" /></Link>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
       <section className="section-padding bg-muted">
         <div className="section-container max-w-4xl">
           <AnimatedSection>
