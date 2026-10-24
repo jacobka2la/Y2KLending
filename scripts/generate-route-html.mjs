@@ -24,6 +24,7 @@ const renderablePages = {
   "/what-we-offer": "/src/pages/WhatWeOffer.tsx",
   "/lending-process": "/src/pages/LendingProcess.tsx",
   "/why-choose-us": "/src/pages/WhyChooseUs.tsx",
+  "/loan-request": "/src/pages/LoanRequest.tsx",
   "/hard-money-lenders-detroit": "/src/pages/HardMoneyDetroit.tsx",
   "/hard-money-lending-michigan": "/src/pages/HardMoneyMichigan.tsx"
 };
