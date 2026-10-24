@@ -15,7 +15,24 @@ export default function CanonicalUrl() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const path = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
+    // Capture the entry page before visitors navigate internally to the loan form.
+    // Keep this session-only; it is included only if someone submits an inquiry.
+    try {
+      if (!sessionStorage.getItem("y2k_first_visit")) {
+        const params = new URLSearchParams(window.location.search);
+        sessionStorage.setItem("y2k_first_visit", JSON.stringify({
+          landingPage: window.location.pathname,
+          referrer: document.referrer || "Direct / unknown",
+          utmSource: params.get("utm_source") || "",
+          utmMedium: params.get("utm_medium") || "",
+          utmCampaign: params.get("utm_campaign") || ""
+        }));
+      }
+    } catch {
+      // Browsing and form submissions work even if storage is blocked.
+    }
+
+    const path = pathname === "/" ? "/" : pathname.replace(/\\/+$/, "");
     const url = `https://www.y2klending.com${path}`;
     const [title, description] = metadata[path] ?? ["Page Not Found | Y2K Lending", "The requested page could not be found."];
     document.title = title;
