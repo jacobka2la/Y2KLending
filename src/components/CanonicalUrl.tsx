@@ -15,7 +15,7 @@ export default function CanonicalUrl() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const path = pathname === "/" ? "/" : pathname.replace(/\\/+$/, "");
+    const path = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
     const url = `https://www.y2klending.com${path}`;
     const [title, description] = metadata[path] ?? ["Page Not Found | Y2K Lending", "The requested page could not be found."];
     document.title = title;
